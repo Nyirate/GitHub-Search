@@ -1,9 +1,29 @@
 <div class="container" id="fom">
-  <input type="text" name="nom" id="nom" placeholder="Username" [(ngModel)]="Username">
-  <br>
-  <br>
-  <br>
-  <!-- <p>abana</p> -->
-  <button (click)="search()">SEARCH</button>
+  <div class="row">
+    <div class="col-md-6">
+      <input type="text" name="nom" id="nom" placeholder="Username" [(ngModel)]="Username">
+      <br>
+      <br>
+      <br>
+      <button (click)="search()">SEARCH</button>
+    </div>
+    <br>
+    <div class="col-md-6">
+      <div *ngIf = "emma"> 
+        <img src="{{emma.avatar_url}}" class="img" height="200">
+        <p>Login: {{emma.login}}</p>
+        <p>Email: {{emma.email}}</p>
+        <p>Repositories:{{emma.public_repos}}</p> 
+        <p>Followers: {{emma.followers}}</p>
+        <p>Following: {{emma.following}}</p> 
+      </div>
+    </div>
+  </div>
 </div>
-<p>Login: {{response.login}}</p>
+
+
+<!-- <div class="container">
+  <div class="row"> -->
+    
+  <!-- </div>
+</div> -->
