@@ -17,7 +17,7 @@ export class SearchFoormComponent implements OnInit {
      this.http.get("https://api.github.com/users/daneden?access_token=c640142ec133d7db16859a0380e82ae43819a6d0" + this.Username)
      .subscribe((response) => {
        this.response = response;
-       console.log(this.response);
+       console.log(this.response); 
      })
     }
 }
