@@ -32,21 +32,21 @@ export class RequestService {
   //   })
   //  }
 
-  //  repoSearch(){
-  //    interface ApiResponse{
-  //      name:string;
-  //      created:Date;      
-  //    }
-  //    let promise = new Promise ((resolve, _reject)=>{
-  //      this.http.get("https://api.github.com/users/"+this.Username+"/repos?access_token=c640142ec133d7db16859a0380e82ae43819a6d0")
-  //      for(var a in this.emma) {
-  //        this.repo.push = (this.emma[a]);
-  //      }
-  //        resolve()
+   repoSearch(){
+     interface ApiResponse{
+       name:string;
+       created:Date;      
+     }
+     let promise = new Promise ((resolve, _reject)=>{
+       this.http.get("https://api.github.com/users/"+this.Username+"/repos?access_token=c640142ec133d7db16859a0380e82ae43819a6d0")
+       for(var a in this.emma) {
+         this.repo.push = (this.emma[a]);
+       }
+         resolve()
 
      
      
-  //    })
+     })
    }
   }
 
