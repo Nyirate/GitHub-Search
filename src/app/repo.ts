@@ -1,5 +1,5 @@
 export class Repo {
-  constructor(public reponame:string,public date:Date){}
+  constructor(public repos_url:string,public description:string){}
 }
 
 

@@ -12,7 +12,6 @@ import { SearchFoormComponent } from './search-foorm/search-foorm.component';
     AppComponent,
     SearchFoormComponent,
     
-    
   ],
   imports: [
     BrowserModule,

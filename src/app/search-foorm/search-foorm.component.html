@@ -8,8 +8,9 @@
       <button (click)="search()">SEARCH</button>
     </div>
     <br>
+     <div *ngIf = "emma"> 
     <div class="col-md-6">
-      <div *ngIf = "emma"> 
+     
         <img src="{{emma.avatar_url}}" class="img" height="200">
         <p>Login: {{emma.login}}</p>
         <p>Email: {{emma.email}}</p>
@@ -18,11 +19,11 @@
         <p>Following: {{emma.following}}</p> 
         <p>GitHub Link: <a href="{{emma.html_url}}">{{emma.html_url}}</a></p>
       </div>
+    <!-- <div class="col-md-4">
+       <h1>My Repositories</h1>
+       <div *ngFor="let repo of repos"> 
+       <p>Repos:<a href="{{repo.html_url}}"></a>{{repo.name}}</p>
+       <p>{{repo.description}}</p>
     </div>
-    
-
-<!-- <div class="container">
-  <div class="row"> -->
-    
-  <!-- </div>
-</div> -->
+  </div>
+</div>  -->
