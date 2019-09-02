@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Userr } from './userr';
 import { Repo } from './repo';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -38,7 +39,7 @@ export class RequestService {
        created:Date;      
      }
      let promise = new Promise ((resolve, _reject)=>{
-       this.http.get("https://api.github.com/users/"+this.Username+"/repos?access_token=c640142ec133d7db16859a0380e82ae43819a6d0")
+       this.http.get("https://api.github.com/users/"+this.Username+"/repos?access_token="+environment.API)
        for(var a in this.emma) {
          this.repo.push = (this.emma[a]);
        }
