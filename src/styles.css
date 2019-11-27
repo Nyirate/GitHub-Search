@@ -1,5 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-/* @import "~bootstrap/dist/css/bootstrap.css" */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; 
+  }
+}
 body{
   background-image: url("../close-up-blank-old-concrete-wall_23-2147856094.jpg");
   background-size:cover;
